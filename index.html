@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <table class="tabela">
+        <tr>
+            <td>Produto</td>
+            <td>Total</td>
+            <td class="pequeno"></td>
+            <td>Quantidade</td>
+            <td class="pequeno">X</td>
+            <td>N</td>
+            <td id="pad">Menos</td>
+            <td id="pad"> Mais </td>
+        </tr>
+        <tr>
+            <td class="td01" id="file">File de Frango</td>
+            <td> <input type="number" name="total" id="total" min="0" max="500" value="0"> </td>
+            <td class="pequeno" id="tdkgpc"><select name="kgpc" id="kgpc">
+                <option value="kg">Kg</option>
+                <option value="pc">Pç</option>
+            </select></td>
+            <td> <input type="number" name="qnt" id="qnt" min="0" max="500"></td>
+            <td class="pequeno" id="tdvezes"><input type="checkbox" name="vezes" id="vezes"> </td>
+            <td class="pequeno1"><input type="number" name="nVezes" id="nVezes"></td>
+            <td class="medio"> <input type="button" value="-" id="botaomenos" onclick="diminuir()"> </td>
+            <td class="medio"> <input type="button" value="+" id="botaomais" onclick="somar()"> </td>
+        </tr>
+
+
+    </table>
+</body>
+
+</html>
